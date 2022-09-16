@@ -127,3 +127,4 @@ buttonEl.addEventListener('click', () => {
         jogadorVez.innerHTML = "Vez de jogador "+jogador;
     }
 });
+
