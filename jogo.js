@@ -36,7 +36,7 @@ function verificaVencedor(){
             
             pontuacaoJog1++;
             pontuacao[0].innerHTML = pontuacaoJog1;
-            jogadorVez.innerHTML = "Jogador 1 venceu";
+            jogadorVez.innerHTML = "Jogador X venceu";
             // alert("Jogador 1 venceu");
             vitoria=true;
             jogador = 1;
@@ -46,9 +46,9 @@ function verificaVencedor(){
         casaEl[3].innerHTML == "X" && casaEl[5].innerHTML == "X" && casaEl[8].innerHTML == "X"){
 
             pontuacaoJog1++;
-            jogadorVez.innerHTML = "Jogador 1 venceu";
+            jogadorVez.innerHTML = "Jogador X venceu";
             // alert("Jogador 1 venceu");
-            pontuacao[0].innerHTML = pontuacaoJog1++;
+            pontuacao[0].innerHTML = pontuacaoJog1;
             vitoria=true;
             jogador = 1;
 
@@ -57,9 +57,9 @@ function verificaVencedor(){
         casaEl[2].innerHTML == "X" && casaEl[4].innerHTML == "X" && casaEl[6].innerHTML == "X"){
 
             pontuacaoJog1++;
-            jogadorVez.innerHTML = "Jogador 1 venceu";
+            jogadorVez.innerHTML = "Jogador X venceu";
             // alert("Jogador 1 venceu");
-            pontuacao[0].innerHTML = pontuacaoJog1++;
+            pontuacao[0].innerHTML = pontuacaoJog1;
             vitoria=true;
             jogador = 1;
 
@@ -69,9 +69,9 @@ function verificaVencedor(){
             casaEl[6].innerHTML == "O" && casaEl[7].innerHTML == "O" && casaEl[8].innerHTML == "O"){
 
                 pontuacaoJog2++;
-                jogadorVez.innerHTML = "Jogador 2 venceu";
+                jogadorVez.innerHTML = "Jogador O venceu";
                 // alert("Jogador 2 venceu");
-                pontuacao[1].innerHTML = pontuacaoJog2++;
+                pontuacao[1].innerHTML = pontuacaoJog2;
                 vitoria=true;
                 jogador = 2;
 
@@ -81,9 +81,9 @@ function verificaVencedor(){
             casaEl[3].innerHTML == "O" && casaEl[5].innerHTML == "O" && casaEl[8].innerHTML == "O"){
 
                 pontuacaoJog2++;
-                jogadorVez.innerHTML = "Jogador 2 venceu";
+                jogadorVez.innerHTML = "Jogador O venceu";
                 // alert("Jogador 2 venceu");
-                pontuacao[1].innerHTML = pontuacaoJog2++;
+                pontuacao[1].innerHTML = pontuacaoJog2;
                 vitoria=true;
                 jogador = 2;
 
@@ -91,9 +91,9 @@ function verificaVencedor(){
     else if(casaEl[0].innerHTML == "O" && casaEl[4].innerHTML == "O" && casaEl[8].innerHTML == "O" ||
             casaEl[2].innerHTML == "O" && casaEl[4].innerHTML == "O" && casaEl[6].innerHTML == "O"){
                 pontuacaoJog2++;
-                jogadorVez.innerHTML = "Jogador 2 venceu";
+                jogadorVez.innerHTML = "Jogador O venceu";
                 // alert("Jogador 2 venceu");
-                pontuacao[1].innerHTML = pontuacaoJog2++;
+                pontuacao[1].innerHTML = pontuacaoJog2;
                 vitoria=true;
                 jogador = 2;
 
@@ -110,11 +110,11 @@ function verificaVencedor(){
 function atualizaJogador(){
     jogador++;
     if(jogador%2==1){
-        jogadorVez.innerHTML = `Vez de jogador 1`;
+        jogadorVez.innerHTML = `Vez de jogador X`;
     }
     else{
         jogador = 0;
-        jogadorVez.innerHTML = `Vez de jogador 2`;
+        jogadorVez.innerHTML = `Vez de jogador O`;
     }
 }
 
